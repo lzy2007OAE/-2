@@ -1,1 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Microsoft Yahei",sans-serif;
+}
+body{
+    line-height:1.6;
+}
+/* 1.介绍区 */
+.hero{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+.slogan{
+    font-size:20px;
+    margin-bottom:25px;
+}
+.down-btn{
+    padding:12px 30px;
+    border:none;
+    border-radius:8px;
+    background:#fff;
+    color:#2563eb;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.down-btn:hover{
+    background:#eef2ff;
+}
+
+/* 2.功能区 响应式布局 */
+section{
+    padding:50px 15px;
+    max-width:1200px;
+    margin:0 auto;
+}
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:28px;
+}
+.func-list{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+.func-card{
+    background:#f3f4f6;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+.func-card:hover{
+    transform: translateY(-6px);
+    box-shadow:0 6px 12px #ddd;
+}
+/* 手机端自动改成2列 */
+@media(max-width:768px){
+    .func-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* 小手机单列 */
+@media(max-width:420px){
+    .func-list{
+        grid-template-columns:1fr;
+    }
+}
+
+/* 3.规格表格 */
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+th,td{
+    padding:14px;
+    text-align:center;
+}
+th{
+    background:#2563eb;
+    color:white;
+}
+
+/* 4.用户评价 */
+.comment-box{
+    display:flex;
+    gap:20px;
+}
+.user-comment{
+    flex:1;
+    padding:20px;
+    background:#f0f7ff;
+    border-radius:8px;
+}
+@media(max-width:768px){
+    .comment-box{
+        flex-direction:column;
+    }
+}
+
+/* 5.会员订阅 */
+.vip-card{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+}
+.price-item{
+    border:2px solid #ddd;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    min-width:260px;
+}
+.price-item.hot{
+    border-color:#2563eb;
+    box-shadow:0 0 15px #c7d2fe;
+}
+.buy-btn{
+    margin-top:18px;
+    padding:10px 24px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.buy-btn:hover{
+    background:#1d4ed8;
+}
+@media(max-width:650px){
+    .vip-card{
+        flex-direction:column;
+        align-items:center;
+    }
+}
 
